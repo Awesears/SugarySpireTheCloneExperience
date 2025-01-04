@@ -133,6 +133,8 @@ hubRoom = hub_paintstudio;
 hubX = -1;
 hubY = -1;
 parryId = -4;
+flying = 0
+global.character = "Mizzelle"
 global.MallowFollow = false;
 global.CrackFollow = false;
 global.ChocoFollow = false;
@@ -169,7 +171,7 @@ suplexMove = false;
 floatyGrab = 18;
 baddieGrabbedID = -4;
 scr_characterSprite();
-paletteSelect = 0;
+paletteSelect = 7;
 global.panic = 0;
 verticalMovespeed = 0;
 tauntTimer = 20;

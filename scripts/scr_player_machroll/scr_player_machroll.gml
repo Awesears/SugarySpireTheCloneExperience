@@ -93,10 +93,22 @@ function state_player_machroll()
     
     if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles))
     {
+		if global.character = "Mizzelle"
+	    {
+		event_play_oneshot("event:/SFX/player/splat", x, y);
+		vsp = -3
+		if xscale = 1
+		xscale = -1
+		else if xscale = -1
+		xscale = 1
+		}
+		else
+	    {
         state = States.bump;
         image_index = 0;
         sprite_index = spr_splat;
         event_play_oneshot("event:/SFX/player/splat", x, y);
+		}
     }
     
     if (sprite_index == spr_crouchslip || sprite_index == spr_crouchslipfall || sprite_index == spr_crouchslipintro || sprite_index == spr_machroll || sprite_index == spr_machroll3 || sprite_index == spr_machroll3intro)

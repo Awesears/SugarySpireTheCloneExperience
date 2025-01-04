@@ -21,6 +21,12 @@ function state_player_normal()
     _dontidle = false;
     _dontStep = false;
     
+	if !grounded && key_jump2 && global.character = "Yizzelle"
+	{
+	state = States.geyser
+	flying = 1
+	}
+	
     if (global.InternalLevelName == "fudge")
     {
         _idle_spr = spr_player_PZ_idle_freezing;

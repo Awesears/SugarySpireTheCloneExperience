@@ -142,8 +142,27 @@ function state_player_mach3()
         vsp = 10;
     }
     
+	
+	//yizzlle
+	if !grounded && sprite_index = spr_player_PZ_mach3_jump && key_jump2 && global.character = "Yizzelle"
+	{
+	state = States.geyser
+	flying = 1
+	}
+	
     if ((!grounded || slopeCheck(x + xscale, y)) && scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_metalblock))
     {
+		if global.character = "Mizzelle"
+	    {
+		event_play_oneshot("event:/SFX/player/splat", x, y);
+		vsp = -13
+		if xscale = 1
+		xscale = -1
+		else if xscale = -1
+		xscale = 1
+		}
+		else
+		{
         verticalMovespeed = movespeed;
         
         if (vsp > 0 && place_meeting(x + xscale, y, obj_icyWall))
@@ -152,6 +171,7 @@ function state_player_mach3()
         grabClimbBuffer = 0;
         inputBufferJump = 0;
         state = States.climbwall;
+		}
     }
     else if (scr_solid(x + xscale, y, true) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_metalblock))
     {

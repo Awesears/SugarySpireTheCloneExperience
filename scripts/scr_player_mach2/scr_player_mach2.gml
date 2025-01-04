@@ -135,6 +135,15 @@ function state_player_mach2()
     {
         if (!grounded || slopeCheck(x + xscale, y))
         {
+		if global.character = "Mizzelle"
+	    {
+		event_play_oneshot("event:/SFX/player/splat", x, y);
+		vsp = -13
+		if xscale = 1
+		xscale = -1
+		else if xscale = -1
+		xscale = 1
+		}
             verticalMovespeed = movespeed;
             
             if (vsp > 0 && place_meeting(x + xscale, y, obj_icyWall))
