@@ -337,3 +337,4 @@ imageIndexArray = array_create(loadSpriteCount + 1, 0);
 global.texturesToLoad = [];
 global.loadedTextures = [];
 texture_debug_messages(true);
+global.cafedarkness = 0

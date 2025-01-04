@@ -1,11 +1,19 @@
 var player_obj;
 
+if sprite_index != spr_dogMount_kick
+{
 player_obj = get_nearestPlayer();
 hsp = sign(x - player_obj.x) * random_range(10, 18);
 
 if (player_obj.x != x)
     image_xscale = -sign(x - player_obj.x);
-
+}
+else if sprite_index = spr_dogMount_kick
+{
+player_obj = get_nearestPlayer();
+hsp = 0
+vsp = 3
+}
 vsp = random_range(-10, -18);
 grav = 0.3;
 alarm[0] = 5;

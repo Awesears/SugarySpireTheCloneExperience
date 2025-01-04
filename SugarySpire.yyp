@@ -2075,6 +2075,7 @@
     {"id":{"name":"spr_bodyloadbar","path":"sprites/spr_bodyloadbar/spr_bodyloadbar.yy",},},
     {"id":{"name":"bg_minecaverns3","path":"sprites/bg_minecaverns3/bg_minecaverns3.yy",},},
     {"id":{"name":"bg_temple2_1","path":"sprites/bg_temple2_1/bg_temple2_1.yy",},},
+    {"id":{"name":"mu_bloodforsex","path":"sounds/mu_bloodforsex/mu_bloodforsex.yy",},},
     {"id":{"name":"spr_candysona_idle32","path":"sprites/spr_candysona_idle32/spr_candysona_idle32.yy",},},
     {"id":{"name":"spr_elevatorfadeoff","path":"sprites/spr_elevatorfadeoff/spr_elevatorfadeoff.yy",},},
     {"id":{"name":"spr_clutterBarrel","path":"sprites/spr_clutterBarrel/spr_clutterBarrel.yy",},},

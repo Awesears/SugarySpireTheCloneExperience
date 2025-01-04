@@ -121,6 +121,9 @@ function state_player_mach3()
         }
     }
     
+	if sprite_index = spr_player_PZ_walk_breakdance && grounded
+	sprite_index = spr_mach3player
+	
     if (key_down && !key_slap2 && !place_meeting(x, y, obj_dashpad))
     {
         mach3Roll = mach3RollMax;
